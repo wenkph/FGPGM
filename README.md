@@ -1,6 +1,7 @@
 # Fast Gaussian Process Based Gradient Matching
 
-Implementation of FGPGM in python 2.7, based on the paper "Fast Gaussian Process Based Gradient Matching for Parameter Identification in Systems of Nonlinear ODEs" by Philippe Wenk, Alkis Gotovos, Stefan Bauer, Nico Gorbach, Andreas Krause and Joachim M. Buhmann. If you use this code for further research, please consider citing our paper.
+Implementation of FGPGM in python 2.7, based on the paper "Fast Gaussian Process Based Gradient Matching for Parameter Identification in Systems of Nonlinear ODEs" by Philippe Wenk, Alkis Gotovos, Stefan Bauer, Nico Gorbach, Andreas Krause and Joachim M. Buhmann. If you use this code for further research, please consider citing our paper (http://arxiv.org/abs/1804.04378
+).
 
 ## Out of the Box Experiments
 
