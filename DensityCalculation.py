@@ -46,12 +46,12 @@ def getDs(DashCs, CPhis):
     """
     D = []
     for i in np.arange(len(DashCs)):
-        def getProdWithD(x):
+        def getProdWithD(x, index=i):
             """
             defines a function to get a product of a vector with the matrix D
             """
-            return np.dot(DashCs[i],
-                          np.linalg.solve(CPhis[i], x)
+            return np.dot(DashCs[index],
+                          np.linalg.solve(CPhis[index], x)
                           )
         D.append(getProdWithD)
     return D
