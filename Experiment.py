@@ -125,7 +125,6 @@ class Experiment(object):
                 # set ticks
                 fig = plt.figure()
                 plot = fig.add_subplot(111)
-                plt.hold(True)
                 # set cross thickness
                 plot.scatter(time, y[:, state], c='k', marker='.', s=100,
                             linewidths=1)
@@ -133,16 +132,17 @@ class Experiment(object):
                 plot.plot(time, x[:, state], 'r', linewidth=2)
                 # set label fontsize
                 plt.xlabel("time",
-                           fontsize=14)
+                           fontsize=20)
                 plt.ylabel("state {}".format(state+1),
-                           fontsize=14)
+                           fontsize=20)
                 plt.setp(plot.get_xticklabels(),
-                         fontsize=14)
+                         fontsize=20)
                 plt.setp(plot.get_yticklabels(),
-                         fontsize=14)
+                         fontsize=20)
+                plt.tight_layout()
                 plt.savefig(os.path.join(plotting,
-                                         "state{}.pdf".format(state)),
+                                         "state{}.png".format(state)),
                             dpi=300)
-                plt.hold(False)
+                
                 plt.close()
         return x, y
